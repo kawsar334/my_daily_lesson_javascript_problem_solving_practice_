@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>
+
+
+        write a function findMax that takes an array of numbers as input and returns the maximum number in the array
+    </h1>
+
+
+    <script>
+        const arr = [2, 3, 56, 6]
+        const findMax = (arr) => {
+            let maxValue = arr[0]
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] > maxValue) {
+                    maxValue = arr[i]
+                }
+            }
+            return maxValue
+        }
+        console.log(findMax(arr))
+
+
+        // using oops
+        class FindMax {
+            constructor(arr) {
+                this.arr = arr;
+            }
+
+            find() {
+                if (this.arr.length === 0) {
+                    return undefined;
+                }
+                let max = this.arr[0];
+                for (let i = 0; i < this.arr.length; i++) {
+                    if (this.arr[i] > max) {
+                        max = arr[i]
+                    }
+                }
+                console.log(max)
+            }
+        }
+
+        const findMaximumNumber = new FindMax(arr);
+        findMaximumNumber.find()
+
+
+    </script>
+</body>
+
+</html>
