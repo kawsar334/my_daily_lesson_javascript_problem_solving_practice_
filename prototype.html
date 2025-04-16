@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype chaining in Javascript</title>
+</head>
+
+<body>
+
+
+
+
+
+    <h1 >Open console=================</h1>
+
+
+
+
+
+    <script>
+        // function proto_inheritence(name){
+        //     console.log(this.proto_inheritence.prototype)
+        // }
+        // proto_inheritence();
+
+
+        let person = {
+            name: "kawsar firoz",
+
+        };
+
+        let me = {
+            age: "90",
+            __proto__: person //  person object 
+
+        }
+        // console.log(me.__proto__);//result will be :person object {}
+        // console.log(me.name);// result will be :kawsar firoz
+
+        console.log(person.__proto__)// return an object {.... some functionalities }
+
+
+        // access prototype 
+        console.log(Object.prototype.age = 70);
+
+
+
+
+        function Person(name) {
+            this.name = name;
+
+            this.getData = (age) => {
+               return`${this.age} and ${name}`
+            }
+
+        };
+
+
+        const p1 = new Person("kawsar=======firoz")
+        const p2 = new Person("kawsar=firoz")
+        console.log(p1.getData(24));
+
+
+
+    </script>
+
+</body>
+
+</html>
