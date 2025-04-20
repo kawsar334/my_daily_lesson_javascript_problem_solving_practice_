@@ -137,10 +137,15 @@ class ExampleLinkedList{
     add(value){
         const newNode = new Node(value);
         if(this.head ===null){
-            console.log(this.head)
             this.head = newNode
+        }else{
+            let current = this.head;
+            console.log("current",current.next)
+            while(current.next !==null){
+                current = current.next;
+            }
+            current.next= newNode
         }
-        console.log(this.head.next)
         this.size++
     }
 }
