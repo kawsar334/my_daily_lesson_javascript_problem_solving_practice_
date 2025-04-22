@@ -79,5 +79,5 @@ class Another_Example_Of_Bubblesort {
     }
 }
 
-const newBubble = new Another_Example_Of_Bubblesort([50, 20, 80, 10, 30, 40]);
-console.log( newBubble.sort());
+// const newBubble = new Another_Example_Of_Bubblesort([50, 20, 80, 10, 30, 40]);
+// console.log( newBubble.sort());
