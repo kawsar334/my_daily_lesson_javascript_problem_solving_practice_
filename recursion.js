@@ -13,13 +13,22 @@ const recursion1= (n)=>{
 console.log(recursion1(2))
 
 
-// example 2
-
-const sumOfArray= (arr)=>{
-    if(arr.length===0) {
-        return 0;
-    };
-    return arr[0]  +sumOfArray(arr.slice(1));
+// example 2--reverse string 
+const recursion2 = (str) => {
+   if(str ==="") return "";
+   return recursion2(str.slice(1))+str[0]
 }
 
-console.log(sumOfArray([2,3,4,10,1]))
+
+console.log(recursion2("hello"))
+
+// example 3
+
+const sumOfArray = (arr) => {
+    if (arr.length === 0) {
+        return 0;
+    };
+    return arr[0] + sumOfArray(arr.slice(1));
+}
+
+console.log(sumOfArray([2, 3, 4, 10, 1]))
