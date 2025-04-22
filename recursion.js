@@ -22,8 +22,18 @@ const recursion2 = (str) => {
 
 console.log(recursion2("hello"))
 
-// example 3
+// example 3 
+const factorial = (n)=>{
+    if(n===0 || n===1) {
+        return 1;
+    }
 
+    return n*factorial(n-1);
+}
+console.log("factorial:", factorial(3))
+
+
+// example 4 ... sum of array ----
 const sumOfArray = (arr) => {
     if (arr.length === 0) {
         return 0;
